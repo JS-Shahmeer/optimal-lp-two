@@ -1,0 +1,9 @@
+Options -MultiViews
+RewriteEngine On
+
+# Send all SPA routes to index.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+
+ErrorDocument 404 /index.html

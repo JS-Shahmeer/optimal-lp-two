@@ -2,6 +2,7 @@ import React from "react";
 import { Gauge, Smartphone, ShieldCheck, Search, Settings2 } from "lucide-react";
 import Reveal from "./Reveal";
 import { PERFORMANCE } from "./data";
+import ConsultButton from "./ConsultButton";
 
 const ICONS = [Gauge, Smartphone, ShieldCheck, Search, Settings2];
 
@@ -44,6 +45,7 @@ export default function Performance() {
             );
           })}
         </ul>
+        <ConsultButton />
       </div>
     </section>
   );

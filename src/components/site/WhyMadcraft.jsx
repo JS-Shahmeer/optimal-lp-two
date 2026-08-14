@@ -2,6 +2,7 @@ import React from "react";
 import { Check } from "lucide-react";
 import Reveal from "./Reveal";
 import { ADVANTAGES } from "./data";
+import ConsultButton from "./ConsultButton";
 
 export default function WhyMadcraft() {
   return (
@@ -24,6 +25,7 @@ export default function WhyMadcraft() {
             </Reveal>
           ))}
         </ul>
+        <ConsultButton />
       </div>
     </section>
   );

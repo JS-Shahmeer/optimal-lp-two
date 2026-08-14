@@ -2,6 +2,7 @@ import React from "react";
 import { ArrowUpRight } from "lucide-react";
 import { Image } from "@/components/ui/image";
 import Reveal from "./Reveal";
+import ConsultButton from "./ConsultButton";
 
 const WORKS = [
   {
@@ -75,6 +76,7 @@ export default function Works() {
             All Recent Projects <ArrowUpRight className="h-4 w-4" />
           </a>
         </Reveal>
+        <ConsultButton />
       </div>
     </section>
   );

@@ -131,3 +131,22 @@
     font-family: var(--font-body);
   }
 }
+
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #eeeeee;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #ff7418;
+  border-radius: 10px;
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #999999 #eeeeee;
+}

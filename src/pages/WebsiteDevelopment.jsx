@@ -12,6 +12,7 @@ import WhyMadcraft from "@/components/site/WhyMadcraft";
 import Faq from "@/components/site/Faq";
 import Footer from "@/components/site/Footer";
 import WordOnTheStreetSection from "../components/site/WordOnTheStreetSection";
+import PricingSection from "../components/site/PricingSection";
 
 export default function WebsiteDevelopment() {
   return (
@@ -23,6 +24,7 @@ export default function WebsiteDevelopment() {
         <Benefits />
         {/* <WordOnTheStreetSection /> */}
         <StatBlock />
+        <PricingSection />
         <ConsultBand />
         <Performance />
         <Works />

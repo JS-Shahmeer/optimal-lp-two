@@ -1,6 +1,7 @@
 import React from "react";
 import Reveal from "./Reveal";
 import { BENEFITS } from "./data";
+import ConsultButton from "./ConsultButton";
 
 export default function Benefits() {
   return (
@@ -26,6 +27,7 @@ export default function Benefits() {
             </Reveal>
           ))}
         </ul>
+        <ConsultButton />
       </div>
     </section>
   );

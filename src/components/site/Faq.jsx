@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Plus } from "lucide-react";
 import Reveal from "./Reveal";
 import { FAQS } from "./data";
+import ConsultButton from "./ConsultButton";
 
 export default function Faq() {
   const [open, setOpen] = useState(0);
@@ -54,6 +55,7 @@ export default function Faq() {
             );
           })}
         </ul>
+        <ConsultButton />
       </div>
     </section>
   );

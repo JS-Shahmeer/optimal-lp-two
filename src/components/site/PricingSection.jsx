@@ -323,7 +323,7 @@ export default function PricingSection() {
             Competitive &amp; Reasonable
           </h2>
 
-          <p className="mx-auto mt-4 sm:mt-5 lg:mt-6 max-w-[850px] text-[15px] sm:text-[16px] leading-[1.5] text-[#66666f]">
+          <p className="mx-auto mt-4 sm:mt-5 lg:mt-6 max-w-[850px] text-[15px] sm:text-[16px] leading-[1.5] text-[#66666f] mb-8 sm:mb-10 md:mb-12 lg:mb-[60px]">
             Optimal IT Solutions understands that digital design and marketing
             services often don’t come cheap. That is why we have devised
             multiple pricing packages so that there is something for everyone.
@@ -331,7 +331,7 @@ export default function PricingSection() {
         </div>
 
         {/* Pricing Cards */}
-        <div className="mt-8 sm:mt-10 md:mt-12 lg:mt-[60px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-4 lg:gap-4">
+        <div id="pricing" className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-4 lg:gap-4">
           {packages.map((item, index) => (
             <PricingCard
               key={index}

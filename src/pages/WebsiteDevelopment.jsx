@@ -13,27 +13,31 @@ import Faq from "@/components/site/Faq";
 import Footer from "@/components/site/Footer";
 import WordOnTheStreetSection from "../components/site/WordOnTheStreetSection";
 import PricingSection from "../components/site/PricingSection";
+import ConsultationPopup from "../components/site/ConsultationPopup";
 
 export default function WebsiteDevelopment() {
   return (
-    <div id="top" className="min-h-screen bg-white font-body text-[#0A0A0A] antialiased">
-      <Header />
-      <main>
-        <Hero />
-        <LogoRibbon />
-        <Benefits />
-        {/* <WordOnTheStreetSection /> */}
-        <StatBlock />
-        <PricingSection />
-        <ConsultBand />
-        <Performance />
-        <Works />
-        <Process />
-        <WhyMadcraft />
-        <Faq />
-        <ConsultBand />
-      </main>
-      <Footer />
-    </div>
+    <>
+      <ConsultationPopup />
+      <div id="top" className="min-h-screen bg-white font-body text-[#0A0A0A] antialiased">
+        <Header />
+        <main>
+          <Hero />
+          <LogoRibbon />
+          <Benefits />
+          {/* <WordOnTheStreetSection /> */}
+          <StatBlock />
+          <PricingSection />
+          <ConsultBand />
+          <Performance />
+          <Works />
+          <Process />
+          <WhyMadcraft />
+          <Faq />
+          <ConsultBand />
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 }

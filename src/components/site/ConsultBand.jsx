@@ -17,10 +17,10 @@ export default function ConsultBand() {
           </p>
           <div className="relative mt-10 flex flex-wrap justify-center gap-4">
             <a
-              href="#consult"
+              href="#pricing"
               className="rounded-full bg-white px-7 py-3.5 text-[14px] font-semibold text-[#0A0A0A] transition-all hover:-translate-y-0.5 hover:shadow-[0_10px_40px_rgba(0,0,0,0.25)]"
             >
-              Schedule Consultation
+              GET YOUR $199 WEBSITE
             </a>
             <a
               href="#works"

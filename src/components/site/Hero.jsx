@@ -1,7 +1,9 @@
 import React from "react";
 import ConsultForm from "./ConsultForm";
 
-const TITLE = ["Custom Website", "Development", "Built for", "Performance & Scale"];
+const TITLE = ["$199. Your Business Website.", "Done in 48 Hours.", "Custom-Built for Performance,", "SEO & Growth"];
+
+
 
 export default function Hero() {
   return (
@@ -18,7 +20,7 @@ export default function Hero() {
 
       <div className="relative mx-auto grid max-w-7xl grid-cols-1 items-start gap-14 px-5 lg:px-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-20">
         <div>
-          <h1 className="text-[40px] sm:text-[56px] lg:text-[68px] font-black leading-[0.95] tracking-tight text-[#0A0A0A]">
+          <h1 className="text-[34px] sm:text-[47px] lg:text-[54px] font-black leading-[0.95] tracking-tight text-[#0A0A0A]">
             {TITLE.map((line) => (
               <span key={line} className="block">
                 {line}
@@ -27,21 +29,55 @@ export default function Hero() {
           </h1>
 
           <p className="mt-8 max-w-[38rem] text-[16px] leading-[1.7] text-[#0A0A0A]/70">
-            Optimal IT Solutions delivers high-performance website development built for scale. Our team combines strategy, UX, and
-            technical excellence to create custom websites optimized for speed, SEO, and conversion.
+            A professionally designed 5-page website combining strategy, UX and high-performance development — built to get found on Google, generate bookings and grow with your business.
           </p>
-          <p className="mt-5 max-w-[38rem] text-[16px] leading-[1.7] text-[#0A0A0A]/70">
-            Every build is engineered with clean architecture, fast load times, and a flexible CMS—giving your business a
-            platform that performs and grows with you. We don't just build sites; we create digital systems that drive
-            measurable results.
-          </p>
+          <div className="space-y-3 flex flex-wrap gap-3 mt-4 items-center">
+            <span className="flex items-center">
+              <span className="text-[#ff7418] mr-1">✓</span>
+              Custom website + professional logo
+            </span>
 
+            <span className="flex items-center">
+              <span className="text-[#ff7418] mr-1">✓</span>
+              Google-ready local SEO
+            </span>
+
+            <span className="flex items-center">
+              <span className="text-[#ff7418] mr-1">✓</span>
+              Contact & booking forms
+            </span>
+
+            <span className="flex items-center">
+              <span className="text-[#ff7418] mr-1">✓</span>
+              5 high-performance pages
+            </span>
+
+            <span className="flex items-center">
+              <span className="text-[#ff7418] mr-1">✓</span>
+              Fast, mobile-ready & conversion-focused
+            </span>
+
+            <span className="flex items-center">
+              <span className="text-[#ff7418] mr-1">✓</span>
+              Live in 48 hours
+            </span>
+
+            <span className="flex items-center">
+              <span className="text-[#ff7418] mr-1">✓</span>
+              Full ownership of every file
+            </span>
+
+            <span className="flex items-center">
+              <span className="text-[#ff7418] mr-1">✓</span>
+              No monthly fees. No lock-in.
+            </span>
+          </div>
           <div className="mt-10 flex flex-wrap gap-4">
             <a
-              href="#consult"
+              href="#pricing"
               className="rounded-full bg-[#0A0A0A] px-7 py-3.5 text-[14px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-[#ff7418] hover:shadow-[0_0_30px_rgba(255,116,24,0.4)]"
             >
-              Schedule Consultation
+              GET YOUR $199 WEBSITE
             </a>
             <a
               href="#works"

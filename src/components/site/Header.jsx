@@ -6,11 +6,12 @@ const LINKS = [
   { label: "Benefits", href: "#benefits" },
   { label: "Work", href: "#works" },
   { label: "Process", href: "#process" },
+  { label: "Pricing", href: "#pricing" },
   { label: "Why Us", href: "#why" },
   { label: "FAQ", href: "#faq" },
 ];
 
-export default function Header() {
+export default function Header({ onOpenConsultation }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -45,12 +46,13 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <a
-            href="#consult"
-            className="rounded-full bg-[#ff7418] px-5 py-2.5 text-[13px] font-semibold text-white transition-all hover:shadow-[0_0_28px_rgba(255,116,24,0.5)] hover:-translate-y-0.5"
+          <button
+            type="button"
+            onClick={() => onOpenConsultation?.()}
+            className="cursor-pointer rounded-full bg-[#ff7418] px-5 py-2.5 text-[13px] font-semibold text-white transition-all hover:shadow-[0_0_28px_rgba(255,116,24,0.5)] hover:-translate-y-0.5"
           >
             Get a Quote
-          </a>
+          </button>
           <button
             onClick={() => setOpen((v) => !v)}
             aria-label="Menu toggle"

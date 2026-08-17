@@ -48,7 +48,7 @@ export default function LogoRibbon() {
     <section className="border-y border-black/5 bg-white py-4">
       <div className="mask-[linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
         <Track items={LOGOS_A} />
-        <Track items={LOGOS_B} reverse />
+        {/* <Track items={LOGOS_B} reverse /> */}
       </div>
     </section>
   );

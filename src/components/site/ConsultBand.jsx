@@ -1,7 +1,7 @@
 import React from "react";
 import Reveal from "./Reveal";
 
-export default function ConsultBand() {
+export default function ConsultBand({ onOpen }) {
   return (
     <section className="bg-white px-5 py-10 lg:px-10 lg:py-16">
       <Reveal className="mx-auto max-w-7xl">
@@ -16,12 +16,13 @@ export default function ConsultBand() {
             ground up or optimizing for performance, scalability, and long-term growth.
           </p>
           <div className="relative mt-10 flex flex-wrap justify-center gap-4">
-            <a
-              href="#pricing"
+            <button
+              type="button"
+              onClick={() => onOpen?.()}
               className="rounded-full bg-white px-7 py-3.5 text-[14px] font-semibold text-[#0A0A0A] transition-all hover:-translate-y-0.5 hover:shadow-[0_10px_40px_rgba(0,0,0,0.25)]"
             >
               GET YOUR $199 WEBSITE
-            </a>
+            </button>
             <a
               href="#works"
               className="rounded-full border border-white/50 px-7 py-3.5 text-[14px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-white/10"

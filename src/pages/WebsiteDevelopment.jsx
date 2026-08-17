@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "@/components/site/Header";
 import Hero from "@/components/site/Hero";
 import LogoRibbon from "@/components/site/LogoRibbon";
@@ -16,11 +16,13 @@ import PricingSection from "../components/site/PricingSection";
 import ConsultationPopup from "../components/site/ConsultationPopup";
 
 export default function WebsiteDevelopment() {
+  const [isConsultationOpen, setIsConsultationOpen] = useState(false);
+
   return (
     <>
-      <ConsultationPopup />
+      <ConsultationPopup isOpen={isConsultationOpen} onClose={() => setIsConsultationOpen(false)} />
       <div id="top" className="min-h-screen bg-white font-body text-[#0A0A0A] antialiased">
-        <Header />
+        <Header onOpenConsultation={() => setIsConsultationOpen(true)} />
         <main>
           <Hero />
           <LogoRibbon />
@@ -28,13 +30,13 @@ export default function WebsiteDevelopment() {
           {/* <WordOnTheStreetSection /> */}
           <StatBlock />
           <PricingSection />
-          <ConsultBand />
+          <ConsultBand onOpen={() => setIsConsultationOpen(true)} />
           <Performance />
           <Works />
           <Process />
           <WhyMadcraft />
           <Faq />
-          <ConsultBand />
+          <ConsultBand onOpen={() => setIsConsultationOpen(true)} />
         </main>
         <Footer />
       </div>

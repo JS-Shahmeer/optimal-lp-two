@@ -1,8 +1,13 @@
 import React from "react";
 import ConsultForm from "./ConsultForm";
+import Awardone from "@/assets/images/award-one.webp";
+import Awardtwo from "@/assets/images/award-two.webp";
+import Awardthree from "@/assets/images/award-three.webp";
+import Awardfour from "@/assets/images/award-four.webp";
+import Awardfive from "@/assets/images/award-five.webp";
+import { Dot } from "lucide-react";
 
 const TITLE = ["$199. Your Business Website.", "Done in 48 Hours.", "Custom-Built for Performance,", "SEO & Growth"];
-
 
 
 export default function Hero() {
@@ -33,42 +38,42 @@ export default function Hero() {
           </p>
           <div className="space-y-3 flex flex-wrap gap-3 mt-4 items-center">
             <span className="flex items-center">
-              <span className="text-[#ff7418] mr-1">✓</span>
+              <Dot className="text-[#ff7418] mr-1" />
               Custom website + professional logo
             </span>
 
             <span className="flex items-center">
-              <span className="text-[#ff7418] mr-1">✓</span>
+              <Dot className="text-[#ff7418] mr-1" />
               Google-ready local SEO
             </span>
 
             <span className="flex items-center">
-              <span className="text-[#ff7418] mr-1">✓</span>
+              <Dot className="text-[#ff7418] mr-1" />
               Contact & booking forms
             </span>
 
             <span className="flex items-center">
-              <span className="text-[#ff7418] mr-1">✓</span>
+              <Dot className="text-[#ff7418] mr-1" />
               5 high-performance pages
             </span>
 
             <span className="flex items-center">
-              <span className="text-[#ff7418] mr-1">✓</span>
+              <Dot className="text-[#ff7418] mr-1" />
               Fast, mobile-ready & conversion-focused
             </span>
 
             <span className="flex items-center">
-              <span className="text-[#ff7418] mr-1">✓</span>
+              <Dot className="text-[#ff7418] mr-1" />
               Live in 48 hours
             </span>
 
             <span className="flex items-center">
-              <span className="text-[#ff7418] mr-1">✓</span>
+              <Dot className="text-[#ff7418] mr-1" />
               Full ownership of every file
             </span>
 
             <span className="flex items-center">
-              <span className="text-[#ff7418] mr-1">✓</span>
+              <Dot className="text-[#ff7418] mr-1" />
               No monthly fees. No lock-in.
             </span>
           </div>
@@ -90,6 +95,13 @@ export default function Hero() {
 
         <div id="consult" className="scroll-mt-28">
           <ConsultForm />
+          <div className="flex items-center gap-3 md:flex-nowrap flex-wrap justify-center md:justify-between mt-4">
+            <img className="w-auto h-14 md:h-12 object-contain" src={Awardone} alt="" />
+            <img className="w-auto h-14 md:h-12 object-contain" src={Awardtwo} alt="" />
+            <img className="w-auto h-14 md:h-12 object-contain" src={Awardthree} alt="" />
+            <img className="w-auto h-14 md:h-12 object-contain" src={Awardfour} alt="" />
+            <img className="w-auto h-14 md:h-12 object-contain" src={Awardfive} alt="" />
+          </div>
         </div>
       </div>
     </section>

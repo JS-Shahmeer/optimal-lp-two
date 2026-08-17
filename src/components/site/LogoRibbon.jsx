@@ -10,7 +10,17 @@ import Img8 from "../../assets/images/home-brand-slider-img/home-brand-slide-8.p
 import Img9 from "../../assets/images/home-brand-slider-img/home-brand-slide-9.png";
 import Img10 from "../../assets/images/home-brand-slider-img/home-brand-slide-10.png";
 
-const LOGOS_A = [Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8, Img9, Img10];
+import Img001 from "../../assets/images/home-brand-slider-img/001.webp";
+import Img002 from "../../assets/images/home-brand-slider-img/002.webp";
+import Img003 from "../../assets/images/home-brand-slider-img/003.webp";
+import Img004 from "../../assets/images/home-brand-slider-img/004.webp";
+import Img005 from "../../assets/images/home-brand-slider-img/005.webp";
+import Img006 from "../../assets/images/home-brand-slider-img/006.webp";
+import Img007 from "../../assets/images/home-brand-slider-img/007.webp";
+import Img008 from "../../assets/images/home-brand-slider-img/008.webp";
+import Img009 from "../../assets/images/home-brand-slider-img/009.webp";
+
+const LOGOS_A = [Img001, Img002, Img003, Img004, Img005, Img006, Img007, Img008, Img009];
 const LOGOS_B = [Img10, Img9, Img8, Img7, Img6, Img5, Img4, Img3, Img2, Img1];
 
 function Track({ items, reverse }) {

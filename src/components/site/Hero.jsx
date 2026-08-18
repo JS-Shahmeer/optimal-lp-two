@@ -96,11 +96,21 @@ export default function Hero() {
         <div id="consult" className="scroll-mt-28">
           <ConsultForm />
           <div className="flex items-center gap-3 md:flex-nowrap flex-wrap justify-center md:justify-between mt-4">
-            <img className="w-auto h-14 md:h-12 object-contain" src={Awardone} alt="" />
-            <img className="w-auto h-14 md:h-12 object-contain" src={Awardtwo} alt="" />
-            <img className="w-auto h-14 md:h-12 object-contain" src={Awardthree} alt="" />
-            <img className="w-auto h-14 md:h-12 object-contain" src={Awardfour} alt="" />
-            <img className="w-auto h-14 md:h-12 object-contain" src={Awardfive} alt="" />
+            <a target="_blank" href="https://www.trustpilot.com/review/optimal-itsolutions.com" rel="noopener noreferrer">
+              <img className="w-auto h-14 md:h-12 object-contain" src={Awardone} alt="" />
+            </a>
+            <a target="_blank" href="https://clutch.co/profile/optimal-it-solutions" rel="noopener noreferrer">
+              <img className="w-auto h-14 md:h-12 object-contain" src={Awardtwo} alt="" />
+            </a>
+            <a target="_blank" href="https://www.designrush.com/agency/profile/optimal-it-solutions" rel="noopener noreferrer">
+              <img className="w-auto h-14 md:h-12 object-contain" src={Awardthree} alt="" />
+            </a>
+            <a target="_blank" href="https://www.goodfirms.co/company/optimal-it-solutions" rel="noopener noreferrer">
+              <img className="w-auto h-14 md:h-12 object-contain" src={Awardfour} alt="" />
+            </a>
+            <a target="_blank" href="https://www.bark.com/en/us/company/optimal-it-solutions/GRNG3B/" rel="noopener noreferrer">
+              <img className="w-auto h-14 md:h-12 object-contain" src={Awardfive} alt="" />
+            </a>
           </div>
         </div>
       </div>
